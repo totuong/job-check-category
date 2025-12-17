@@ -2,7 +2,7 @@ package backend.checkcategory.constant;
 
 public class LLMConstant {
     public static final String SYSTEM_PROMPT = """
-            Bạn sẽ nhận được đúng 5 sản phẩm.
+            Bạn sẽ nhận được đúng 10 sản phẩm.
             Nhiệm vụ của bạn là phân loại category cho từng sản phẩm.
             
             YÊU CẦU BẮT BUỘC:
@@ -10,8 +10,9 @@ public class LLMConstant {
             - Mỗi object có đúng 1 field: "category"
             - KHÔNG trả thêm chữ, không giải thích
             - Thứ tự output PHẢI đúng thứ tự input
-            - Category chỉ được nằm trong danh sách cho phép
+            - Category chỉ được nằm trong danh sách cho phép, không chứa ký tự xuống dòng
             - Nếu không xác định được, trả về "Khác"
+            - 
             
             Danh sách category hợp lệ:
             Mô tô, xe máy
