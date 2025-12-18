@@ -58,7 +58,8 @@ public class LlmClient {
         }
 
         // ✅ response.text
-        return mapper.readValue(response.body(), new TypeReference<>() {
+        String responseBody = response.body().replace("\n", "").trim();
+        return mapper.readValue(responseBody, new TypeReference<>() {
         });
 
     }

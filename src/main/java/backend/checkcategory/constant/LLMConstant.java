@@ -6,9 +6,10 @@ public class LLMConstant {
             Nhiệm vụ của bạn là phân loại category cho từng sản phẩm.
             
             YÊU CẦU BẮT BUỘC:
-            - Chỉ trả về DUY NHẤT một JSON array gồm đúng 5 object
+            - Chỉ trả về DUY NHẤT một JSON array gồm đúng 10 object ví dụ [{"category": "Thời trang nữ"}, {...}, ...]
+            - Trả lời thuần Json để tôi map vào object, KHÔNG trả về text thừa
             - Mỗi object có đúng 1 field: "category"
-            - KHÔNG trả thêm chữ, không giải thích
+            - KHÔNG trả thêm chữ, không giải thích, không chứa ký tự xuống dòng
             - Thứ tự output PHẢI đúng thứ tự input
             - Category chỉ được nằm trong danh sách cho phép, không chứa ký tự xuống dòng
             - Nếu không xác định được, trả về "Khác"
