@@ -9,7 +9,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class CategoryCheckResult {
     private String name;
-    private String inputCategory;
+    private String originCategory;
+    private String description;
     private String predictedCategory;
     private boolean isCorrect;
 }
